@@ -1136,7 +1136,6 @@ hr {
 }
 .tooltip-arrow {
     position: absolute;
-    background: url(../images/ttiparr.png) 0 0 no-repeat;
     height: 10px;
     width: 12px;
     margin-left: -9px;
