@@ -1,0 +1,30 @@
+const path = require('path');
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, './src/dist'),
+    },
+    mode: 'development',
+    devServer: {
+        contentBase: './src',
+        hot: true,
+        writeToDisk: true,
+        open: true,
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/i,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/env']
+                    },
+                },
+                exclude: /node_modules/,
+            }
+        ]
+    }
+};
