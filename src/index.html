@@ -142,6 +142,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 		<!-- * * * * * * Top slider: end * * * * * * -->
 
@@ -568,9 +569,9 @@
 
 		<!-- * * * * * * map section * * * * * * -->
 		<section class="map-section">
-			<!script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></!script>
+			<script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 			<div id="mapexMap"></div>
-			<!script type="text/javascript">
+			<script type="text/javascript">
 				ymaps.ready(function () {
 					var mapexMap = new ymaps.Map('mapexMap', {
 						center: [44.84373337182117, 37.65565927116387], // центр карты
@@ -599,7 +600,7 @@
 
 
 				});
-			</!script>
+			</script>
 		</section>
 		<!-- * * * * * * map section: end * * * * * * -->
 
@@ -715,8 +716,8 @@
 
 
 	<!--[if lt IE 9]>
-    <!script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></!script>
-    <!script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></!script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="./dist/bundle.js"></script>
 </body>

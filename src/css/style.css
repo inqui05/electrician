@@ -843,10 +843,10 @@ hr.white {
 	bottom: 25px;
 }
 .top-slider .slick-dots li {
-	border-color: rgb(255, 255, 255) !important;
+	border-color: #fff !important;
 }
 .top-slider .slick-dots li.slick-active {
-	background-color: rgb(255, 255, 255) !important;
+	background-color: #fff !important;
 }
 .top-slider {
 	overflow: hidden;

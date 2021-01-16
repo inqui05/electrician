@@ -398,6 +398,7 @@ img.right{
     left: 50%;
     margin-top: -7px;
     margin-left: -4px;
+    background: url(../images/fancy-arrow.png) 0 0 no-repeat;
 }
 .fancybox-title-float-wrap{
     left: 0;
