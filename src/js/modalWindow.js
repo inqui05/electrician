@@ -13,8 +13,6 @@ const modalWindow = () => {
         modalOverlay.style.display = 'block';
     };
 
-    //console.log(price);
-
     const closeMenu = () => {
         modalCallback.style.display = 'none';
         modalOverlay.style.display = 'none';
