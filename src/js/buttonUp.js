@@ -15,7 +15,6 @@ const buttonUp = () => {
     });
 
     up.addEventListener('click', () => {
-        console.log(top);
         top.scrollIntoView({behavior: "smooth"});
     });
 };
