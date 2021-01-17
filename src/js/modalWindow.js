@@ -6,7 +6,8 @@ const modalWindow = () => {
         price = document.querySelector('#services'),
         faq = document.querySelector('#faq'),
         contacts = document.querySelector('#contacts'),
-        modalOverlay = document.querySelector('.modal-overlay');
+        modalOverlay = document.querySelector('.modal-overlay'),
+        buttonServices = document.querySelector('.button-services');
     
     const showMenu = () => {
         modalCallback.style.display = 'block';
@@ -41,6 +42,10 @@ const modalWindow = () => {
             contacts.scrollIntoView({behavior: "smooth"});
             return;
         }
+    });
+
+    buttonServices.addEventListener('click', () => {
+        showMenu();
     });
 
     modalOverlay.addEventListener('click', () => {

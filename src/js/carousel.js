@@ -6,7 +6,6 @@ const carousel = () => {
         elements = document.querySelectorAll('.col-sm-6'),
         modalCallback = document.querySelector('.modal-callback'),
         modalOverlay = document.querySelector('.modal-overlay'),
-        modalClose = document.querySelector('modal-close'),
         style = document.createElement('style'),
         long = elements.length;
     let realPosition = 0,
