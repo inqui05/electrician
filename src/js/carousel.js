@@ -4,8 +4,6 @@ const carousel = () => {
         servicesCarousel = document.querySelector('.services-carousel'),
         arrows = document.querySelector('.services-arrow'),
         elements = document.querySelectorAll('.col-sm-6'),
-        modalCallback = document.querySelector('.modal-callback'),
-        modalOverlay = document.querySelector('.modal-overlay'),
         style = document.createElement('style'),
         long = elements.length;
     let realPosition = 0,
@@ -14,16 +12,6 @@ const carousel = () => {
         maxPos = 3,
         minPos = 0,
         countElems = 3;
-    
-    const addCallback = () => {
-        modalCallback.style.display = 'block';
-        modalOverlay.style.display = 'block';
-    };
-
-    const removeCallback = () => {
-        modalCallback.style.display = 'none';
-        modalOverlay.style.display = 'none';
-    };
 
     const findcountElems = () => {
         const widthWindow = document.documentElement.clientWidth;
@@ -97,25 +85,6 @@ const carousel = () => {
 
             servicesCarousel.style.transform = `translateX(-${newPosition * Math.floor(100 / countElems)}%)`;
             currentPosition = newPosition;
-        }
-    });
-
-    servicesElements.addEventListener('click', event => {
-        const target = event.target;
-
-        if (target.tagName === 'A') {
-            event.preventDefault();
-            addCallback();
-        }
-    });
-
-    modalOverlay.addEventListener('click', () => {
-        removeCallback();
-    });
-
-    modalCallback.addEventListener('click', event => {
-        if (event.target.classList.contains('.modal-close') || event.target.tagName === 'IMG') {
-            removeCallback();
         }
     });
 };

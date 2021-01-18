@@ -1,6 +1,7 @@
 'use strict';
 const modalWindow = () => {
     const modalClose = document.querySelector('.modal-close'),
+        servicesElements = document.querySelector('.services-elements'),
         header = document.querySelector('.header.relative'),
         modalCallback = document.querySelector('.modal-callback'),
         price = document.querySelector('#services'),
@@ -54,6 +55,15 @@ const modalWindow = () => {
 
     modalClose.addEventListener('click', () => {
         closeMenu();
+    });
+
+    servicesElements.addEventListener('click', event => {
+        const target = event.target;
+
+        if (target.tagName === 'A') {
+            event.preventDefault();
+            showMenu();
+        }
     });
 };
 
