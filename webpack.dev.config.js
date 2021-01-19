@@ -5,14 +5,13 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, './src/dist'),
+        path: path.resolve(__dirname, './dist'),
     },
     plugins: [
         new CleanWebpackPlugin(),
     ],
     mode: 'development',
     devServer: {
-        contentBase: './src',
         hot: true,
         writeToDisk: true,
         open: true,
